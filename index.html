@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Giga Pet - In the Jungle</title>
+    <meta name="description" content="Maquenzie Garcia - Giga Pet Project">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <!--Addition of font awesome-->
+    <script src="https://kit.fontawesome.com/1ebf2720c0.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts addition -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Giga Pet - In the Jungle
+      </h1>
+    </header>
+
+    <main>
+      <!--Putting pet image and stats together for the format I want-->
+      <div class="pet-stats-container">
+        <section class="pet-image-container">
+          <!--For navigation for multiple pets-->
+          <div class="pet-navigation">
+            <i class="fa-solid fa-arrow-left arrow-left"></i>
+            <!--Replaced pet image with my own-->
+            <img class="pet-image" src="images/tiger.png" alt="Tiger">
+            <i class="fa-solid fa-arrow-right arrow-right"></i>
+          </div>
+          <!--Health hearts display under the pet-->
+          <div class="health-hearts"></div>
+        </section>
+        <section class="dashboard">
+          <div>Name: <strong><span class="name"></span></strong></div>
+          <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+          <div>Happiness: <strong><span class="happiness"></span> happiness points</strong></div>
+          <!--Adding another button to represent another activity-->
+          <div>Energy: <strong><span class="energy"></span> energy points</strong></div>
+        </section>
+      </div>
+
+      <!--For creation of visual notif after each button press-->
+      <div class="pet-notif"></div>
+      <div class="button-container">
+        <button class="treat-button">
+          <i class="fa-solid fa-bowl-food"></i>
+        </button>
+        <button class="play-button">
+          <i class="fa-brands fa-yarn"></i>
+        </button>
+        <button class="exercise-button">
+          <i class="fa-solid fa-dumbbell"></i>
+        </button>
+        <button class="rest-button">
+          <i class="fa-solid fa-bed"></i>
+        </button>
+      </div>
+    </main>
+    
+    <!--Layout taken from google dev tools demo: https://developer.chrome.com/docs/devtools/javascript-->
+    <div class="bug-example">
+      <h2>Demo: Get Started Debugging JavaScript with Chrome DevTools</h2>
+      <label for="num1">Number 1</label>
+      <input placeholder="Number 1" id="num1">
+      <label for="num2">Number 2</label>
+      <input placeholder="Number 2" id="num2">
+      <button>Add Number 1 and Number 2</button>
+    </div>
+
+    <!--Examples and code from DOM demo-https://developer.chrome.com/docs/devtools/dom -->
+    <div class> 
+      <!--Example with painters-->
+      <ul>
+        <li>Michelangelo</li>
+        <li>Raphael
+        The <strong>Elements</strong> panel of DevTools opens.
+        <code translate="no" dir="ltr">&lt;li&gt;Michelangelo&lt;/li&gt;</code> is highlighted in the <strong>DOM Tree</strong>.</li>
+      </ul>
+      <!--Example with the cities-->
+      <ul>
+        <li>Tokyo</li>
+        <li>Beirut</li>
+      </ul>
+    </div>
+
+    <!--Example with names-->
+    <ul>
+      <li>George</li>
+      <li>Ringo</li>
+      <li>Paul</li>
+      <li>John</li>
+    </ul>
+  
+    <!--Example dealing with viewport-->
+    <ol>
+      <li><p>Right-click <strong>Magritte</strong> below and select <strong>Inspect</strong>.</p>
+        <ul>
+          <li>Magritte</li>
+          <li>Soutine</li>
+        </ul></li>
+        <li><p>Scroll to the appendix section <a href="#scroll2">Scroll into view</a> for
+        additional instructions.</p></li>
+    </ol>
+
+    <!--Examples for editing from devtools.-->
+    <ul>
+      <li>Fry</li>
+      <li>Michelle</li>
+    </ul>
+
+    <ul>
+      <li>Howard</li>
+      <li>Vince</li>
+    </ul>
+
+    <!--Examples from duplicating a node-->
+     <ul>
+      <li>Bonfire of the Vanities</li>
+      <li>Nana</li>
+    </ul>
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+  </body>
+</html>

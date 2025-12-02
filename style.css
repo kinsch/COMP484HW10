@@ -1,0 +1,190 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Bungee Spice", helvetica, arial, sans-serif;
+    margin: 25px;
+    background: url("images/Background_example.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  h1 {
+    font-weight: bold;
+    color: #000;
+    font-size: 90px;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  p {
+    max-width: 600px;
+  }
+  
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  footer {
+    padding-top: 25px;
+    border-top: 1px solid black;
+  }
+  
+  footer a {
+    float:left;
+    margin:5px;
+  }
+
+  .dashboard div {
+    display:block;
+  }
+  
+  /*-------------------PET IMAGES, PET STATS & DASHBOARD, PET CONTAINERS, ETC---------------*/
+  /*Creation of container for pet image and stats to the left*/
+  .pet-stats-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+
+  .pet-image-container {
+    flex-shrink: 0;
+  }
+
+  .pet-image {
+    height:500px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .pet-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+  }
+  
+  .dashboard {
+    text-align: left;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+  }
+
+  /*Adding to select the metadata for the pet*/
+  .dashboard strong, .dashboard span {
+    font-family: helvetica, arial, sans-serif;
+  }
+  
+  /*-------------------BUTTON STYLES-------------------*/
+  .button-container {
+    margin-top:50px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .button-container button {
+    width: 100px;
+      margin-right: 10px;
+      text-align: center;
+      display: inline-block;
+    font-size:40px;
+    background-color: #053f1d;
+    border-color: #404853;
+    border-radius: 30%;
+    cursor:pointer;
+    color: #fafafa;
+  }
+
+  .button-container button:hover {
+    background-color: #2e3a4a;
+    transform: translateY(-2px);
+  }
+  .button-container button:active {
+    background-color: #053105;
+    transform: translateY(0);
+  }
+
+  /*------------NAVIGATION BUTTON STYLES------------*/
+  .arrow-left,
+  .arrow-right {
+  font-size: 40px;
+  color: #053f1d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 10px;
+  }
+
+  .arrow-left:hover,
+  .arrow-right:hover {
+    color: #2e3a4a;
+    transform: scale(1.2);
+  }
+
+  .arrow-left:active,
+  .arrow-right:active {
+    transform: scale(1.0);
+  }
+
+  /*-------------------PET NOTIFICATION & HEALTH HEARTS STYLES-------------------*/
+  .pet-notif {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    min-height: 30px;
+    font-style: bold;
+    font-weight: bold;
+    color: #333;
+  }
+
+  /*For health hearts under the pet*/
+  .health-hearts {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+  }
+
+  /*For demo work */
+  .bug-example {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
